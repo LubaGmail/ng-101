@@ -1,0 +1,21 @@
+<div>
+
+  <span
+    (click)='onClick()'
+    class='fa'
+    [class.fa-star]='isFav'
+    [class.fa-star-o]='!isFav'
+  ></span>
+
+  <div class="form-group">
+    <label for='title' class="label">Title:  &nbsp;</label>
+    <input [(ngModel)]='title' 
+      name='title' 
+      class='form-control' 
+    />
+    
+    {{title | titleCase}}
+  </div>
+  
+  <hr  />
+</div>
